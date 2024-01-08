@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import LikeComponents from './components/Like-components';
+import CommentsComponent from './components/Comments-component';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrap">
+        <div className="card">
+          <div className="card-img">
+            <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i_2H_ss8i.ko/v0/-1x-1.jpg" alt="" />
+            <LikeComponents/>
+          </div>
+          <CommentsComponent/>
+        </div>
+      </div>
     </div>
   );
 }
